@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
-    <title>Document</title>
+    <title>Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <Nav>
         <div class="nav" id="top_nav">
             <div>
-                <p>Psic Lucia Idali Arras</p>
+                <p class="name">Psic Lucia Idali Arras</p>
             </div>
             <div class="menu">
                 <img src="../IMG/burger.png" alt="">
@@ -29,33 +29,102 @@
                             <div>Appointment</div>
                         </a>
                         <a href="../HTML/Colaborations.html">
-                            <div>colaboraciones</div>
+                            <div>Colaborations</div>
                         </a>
                         <a href="../HTML/Contact.html">
-                            <div>contact</div>
+                            <div>Contact</div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </Nav>
-
-    <footer>
-        <div>Psic Lucia Idali Arras</div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+    <main>
+        <div id="init">
+            <div id="main_img">
+                <div class="text">
+                    <h1>Lucia Idali Arras</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim magni, suscipit, sint laborum provident eveniet repellendus sequi nemo aliquam quas assumenda vitae aliquid qui laudantium sed libero fuga. Accusantium, optio!</p>
+                </div>
+                <div class="img"></div>
+            </div>
+            <button class="therapy">Schedule Therapy</button>
         </div>
+
+        <div id="qoute">
+            <div class="img">
+                image
+            </div>
+            <div class="background_qoute">
+                <h2>Qoute</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur et aut totam, perspiciatis magnam consequuntur distinctio omnis neque. Magnam blanditiis dolor ex quisquam inventore aliquid atque temporibus iure quod.</p>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide">
+                    <div class="img">
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="img2">
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="img">
+
+                    </div>
+                </div>
+            </div>
+            <button class="buttons prev">&#10094;</button>
+            <button class="buttons next">&#10095;</button>
+        </div>
+
+    </main>
+    <footer>
         <div>
-            <p>Privacy</p>
-            <p>Terms of service</p>
-            <p>Terms of service for therapy</p>
+            <p class="name">Psic Lucia Idali Arras</p>
+        </div>
+        <div id="logo">
+            <a href=""><img src="../IMG/Insta_logo.webp" alt=""></a>
+            <a href=""><img src="../IMG/tikTok_logo.png" alt=""></a>
+            <a href=""><img src="../IMG/youtube.webp" alt=""></a>
+        </div>
+        <div id="terms">
+            <a href=""><p>Privacy</p></a>
+            <a href=""><p>Terms of service</p></a>
+            <a href=""><p>Terms of service for therapy</p></a>
         </div>
         <div>
             <p>@ Lucia Idali Arras</p>
         </div>
     </footer>
+    <script>
+        const slides = document.querySelector(".slides");
+        const slide = document.querySelectorAll(".slide");
+        const prev = document.querySelector(".prev");
+        const next = document.querySelector(".next");
+
+        var index = 0;
+
+        function nextSlide(){
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prev.addEventListener("click", back)
+        next.addEventListener("click", forward)
+
+        function back(){
+            index--;
+            nextSlide();
+        }
+
+        function forward(){
+            index++;
+            nextSlide();
+        }
+    </script>
 </body>
 </html>
