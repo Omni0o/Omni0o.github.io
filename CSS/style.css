@@ -74,6 +74,22 @@ Nav > #top_nav > div > img {
     margin-right: 40px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    Nav > div#top_nav {
+        height: 10vh;
+    }
+
+    Nav > #top_nav > div > img {
+    width: 7vh;
+    margin-right: 40px;
+    }
+
+    p.name{
+    font-size: 8vw;
+    font-family:"Birthstone", cursive;
+}
+}
+
 /* Hidden navigation bar */
 
 div#bottom_nav{
@@ -149,8 +165,12 @@ div#bottom_nav > div > a:active {
 /* main section */
 
 main{
-    width: 100VW;
+    width: 100%;
     background-color: var(--base-color);
+}
+
+main#page_2 {
+    background: none;
 }
 
 main > div#init {
@@ -374,6 +394,232 @@ div#qoute > div.background_qoute > p {
     }
     100%{
         background-color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+div#init {
+    padding: 20px;
+    background-image: radial-gradient(var(--pop-color), var(--base-color));
+}
+
+div#init > div {
+    padding-bottom: 20px;
+}
+
+div#init > div#main_img > div.text {
+    margin: 0;
+    padding: 0;
+}
+
+
+div#init h2 {
+    font-family: "Coiny", system-ui;
+    font-size: 10vh;
+    color: var(--base-color);
+}
+
+div#init > div#main_img > div.text > p.mini-name {
+    font-size: 2.5vmin;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    div#init > div#main_img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#init h2 {
+        font-size: 1vmin;
+        font-weight: normal;
+    }
+}
+
+div#about-me {
+    background-color: var(--back-color);
+}
+
+div#about-me > h2 {
+    font-family: "birthstone", cursive;
+    font-size: 10vmin;
+    margin-top: 30px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-color: black;
+    border-style: solid;
+    border-top: 2px;
+    border-right: 10px;
+    border-left: 10px;
+}
+
+div#about-me > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vmin;
+}
+
+div.about_me2 {
+    font-size: 3vmin;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+div.about_me2 > div.about_text {
+    width: 50%;
+    margin-left: 10%;
+}
+
+div.about_me2 > div.about_text > p {
+    text-align: start;
+}
+
+div.about_me > div.about_text {
+    width: 50%;
+    margin-right: 10%;
+}
+
+div.about_me > div > p {
+    text-align: start;
+    font-size: 3vmin;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    div#about-me > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    div.about_me2 > div.about_text {
+        width: 90%;
+        margin: 10%;
+    }
+
+    div.about_me > div.about_text {
+        width: 90%;
+        margin: 10%;
+    }
+
+}
+
+main#form {
+    display: flex;
+    justify-content: center;
+    color: var(--back-color);
+}
+
+main#form > div{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin: 10%;
+}
+
+main#form > div > div.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+main#form > div > div.field > label {
+    font-size: 4vmin;
+
+}
+
+main#form > div > div.field > input {
+    width: 90%;
+    height: 6vmin;
+    font-size: 4vmin;
+}
+
+
+
+.input_con {
+    display: block;
+    position: relative;
+    padding-left: 5vmin;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* Hide the browser's default checkbox */
+.input_con input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 30vmin;
+    height: 5vmin;
+    width: 5vmin;
+    background-color: var(--back-color);
+}
+
+/* On mouse-over, add a grey background color */
+.input_con:hover input ~ .checkmark {
+    background-color: var(--hover-pop-color);
+}
+
+/* When the checkbox is checked, add a blue background */
+.input_con input:checked ~ .checkmark {
+    background-color: var(--pop-color);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.input_con input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.input_con .checkmark:after {
+    left: 14px;
+    top: 7px;
+    width: 10px;
+    height: 20px;
+    border: solid var(--back-color);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+@media screen and (min-width: 480px) and (max-width: 1300px) {
+    .checkmark{
+        left: 25vmin;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1150px) {
+    .checkmark{
+        left: 20vmin;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+    .checkmark{
+        left: 15vmin;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    .checkmark{
+        left: 10vmin;
     }
 }
 
