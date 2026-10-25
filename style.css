@@ -509,16 +509,26 @@ div.about_me > div > p {
 main#form {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: var(--back-color);
+}
+
+main#form > h2 {
+    width: 100%;
+    text-align: center;
+    margin: 50px;
+    font-size: 8vmin;
+    color: var(--pop-color);
 }
 
 main#form > div{
     background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
-    margin: 10%;
+    margin-bottom: 10%;
 }
 
-main#form > div > div.field {
+main#form > div > div#main_form1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -536,8 +546,6 @@ main#form > div > div.field > input {
     height: 6vmin;
     font-size: 4vmin;
 }
-
-
 
 .input_con {
     display: block;
@@ -564,6 +572,17 @@ main#form > div > div.field > input {
     height: 5vmin;
     width: 5vmin;
     background-color: var(--back-color);
+}
+
+div#main_form2 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+div#main_form2 .checkmark {
+    position: absolute;
+    left: 0vmin;
+    width: 5vmin;
 }
 
 /* On mouse-over, add a grey background color */
@@ -599,10 +618,43 @@ main#form > div > div.field > input {
     transform: rotate(45deg);
 }
 
+div.divider {
+    border: 1px solid var(--back-color);
+    margin: 2%;
+}
+
+main#form > div > button.therapy {
+    width: 90%;
+    margin-left:5% ;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+main#form > div > div > .label {
+    margin-right: 20%;
+    margin-left: 25%;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1300px) {
+    main#form > div > div > .label {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    main#form > div > div > .label {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
 @media screen and (min-width: 480px) and (max-width: 1300px) {
     .checkmark{
         left: 25vmin;
     }
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 1150px) {
@@ -621,7 +673,17 @@ main#form > div > div.field > input {
     .checkmark{
         left: 10vmin;
     }
+    .input_con .checkmark:after {
+    left: 7px;
+    top: 0px;
+    width: 10px;
+    height: 20px;
+    border: solid var(--back-color);
+    border-width: 0 3px 3px 0;
+    }
 }
+
+
 
 /* Footer Section */
 

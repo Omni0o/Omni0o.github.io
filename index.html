@@ -29,7 +29,7 @@
                             <div>Appointment</div>
                         </a>
                         <a href="/Colaborations.html">
-                            <div>Colaborations</div>
+                            <div>Collaborations</div>
                         </a>
                         <a href="/Contact.html">
                             <div>Contact</div>
@@ -44,7 +44,7 @@
             <div id="main_img">
                 <div class="text">
                     <h1>Lucia Idali Arras</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim magni, suscipit, sint laborum provident eveniet repellendus sequi nemo aliquam quas assumenda vitae aliquid qui laudantium sed libero fuga. Accusantium, optio!</p>
+                    <p>I am a Mexican clinical psychologist trained in brief, systemic, and Ericksonian therapy, dedicated to supporting adolescents, young adults, and adults through personal and relational transformation.</p>
                 </div>
                 <div class="img"></div>
             </div>
@@ -56,8 +56,8 @@
                 image
             </div>
             <div class="background_qoute">
-                <h2>Qoute</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur et aut totam, perspiciatis magnam consequuntur distinctio omnis neque. Magnam blanditiis dolor ex quisquam inventore aliquid atque temporibus iure quod.</p>
+                <h2>Qoute by Carl Young</h2>
+                <p>Knowing your own darkness is the best method for dealing with the darkness of other people.</p>
             </div>
         </div>
         <div class="carousel">
@@ -117,12 +117,20 @@
         next.addEventListener("click", forward)
 
         function back(){
-            index--;
+            if (index > 0) {
+                index--;
+            } else if (index = -1) {
+                index = 2;
+            }
             nextSlide();
         }
 
         function forward(){
-            index++;
+            if (index < 2) {
+                index++;
+            } else if (index = 2) {
+                index = 0;
+            }
             nextSlide();
         }
     </script>

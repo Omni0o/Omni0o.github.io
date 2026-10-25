@@ -39,65 +39,55 @@
             </div>
         </div>
     </Nav>
+    
     <main id="form">
+        <h2>Appoinment Form</h2>
         <div>
-            <div class="field">
+            <div class="field" id="main_form1">
                 <label>Name:</label><br>
                 <input id="name" type="text" placeholder="John Doe">
                 <p id="nameError" class="error"></p>
             </div>
-            <div class="field">
+            <div class="field" id="main_form1">
                 <label>Email:</label><br>
                 <input type="email" placeholder="email@gmail.com">
                 <p id="emailError" class="error"></p>
             </div>
-            <div class="field">
+            <div class="field" id="main_form1">
                 <label>Phone Number:</label><br>
                 <input type="tel" placeholder="+1-(123)-456-7890">
                 <p id="telephoneError" class="error"></p>
             </div>
-            <div class="field">
+            <div class="field" id="main_form1">
                 <label>Soonest day for an Appointment</label><br>
                 <input type="date">
                 <p id="emailError" class="error"></p>
             </div>
-            <div class="field">
-                <label>Day availability</label>
-                <label for="">
-                    <input type="checkbox" id="monday" onclick="chMon()">Monday
+            <div class="field" id="main_form2">
+                <label style="text-decoration: underline;">Day availability</label>
+                <label class="input_con">Monday
+                    <input type="checkbox" id="monday" onclick="chMon()">
                     <span class="checkmark"></span>
                 </label>
-                <label for="">
-                    <input type="checkbox" id="tuesday" onclick="chTue()">Tuesday
+                <label class="input_con">Tuesday
+                    <input type="checkbox" id="tuesday" onclick="chTue()">
                     <span class="checkmark"></span>
                 </label>
-                <label for="">
-                    <input type="checkbox" id="wednesday" onclick="chWed()">Wednesday
+                <label class="input_con">Wednesday
+                    <input type="checkbox" id="wednesday" onclick="chWed()">
                     <span class="checkmark"></span>
                 </label>
-                <label for="">
-                    <input type="checkbox" id="thursday" onclick="chThur()">Thursday
+                <label class="input_con">Thursday
+                    <input type="checkbox" id="thursday" onclick="chThur()">
                     <span class="checkmark"></span>
                 </label>
-                <label for="">
-                    <input type="checkbox" id="friday" onclick="chFri()">Friday
-                    <span class="checkmark"></span>
-                </label>
-                <label for="">
-                    <input type="checkbox" id="saturday" onclick="chSat()">Saturday
-                    <span class="checkmark"></span>
-                </label>
-                <label for="">
-                    <input type="checkbox" id="sunday" onclick="chSun()">Sunday
+                <label class="input_con">Friday
+                    <input type="checkbox" id="friday" onclick="chFri()">
                     <span class="checkmark"></span>
                 </label>
             </div>
             <div class="field" id="Monday" style="display: none;">
-                <label>Available times Monday</label>
-                <label class="input_con">9:00 AM
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
+                <label class="label">Available times Monday</label>
                 <label class="input_con">10:00 AM
                     <input type="checkbox">
                     <span class="checkmark"></span>
@@ -138,17 +128,9 @@
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="input_con">8:00 PM
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
             </div>
             <div class="field" id="Tuesday" style="display: none;">
-                <label for="">Available times Tuesday</label>
-                <label class="input_con">
-                    <input type="checkbox">9:00 AM
-                    <span class="checkmark"></span>
-                </label>
+                <label class="label">Available times Tuesday</label>
                 <label class="input_con">
                     <input type="checkbox">10:00 AM
                     <span class="checkmark"></span>
@@ -187,19 +169,11 @@
                 </label>
                 <label class="input_con">
                     <input type="checkbox">7:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">8:00 PM
                     <span class="checkmark"></span>
                 </label>
             </div>
             <div class="field" id="Wednesday" style="display: none;">
-                <label>Available times Wednesday</label>
-                <label class="input_con">
-                    <input type="checkbox">9:00 AM
-                    <span class="checkmark"></span>
-                </label>
+                <label class="label">Available times Wednesday</label>
                 <label class="input_con">
                     <input type="checkbox">10:00 AM
                     <span class="checkmark"></span>
@@ -238,19 +212,11 @@
                 </label>
                 <label class="input_con">
                     <input type="checkbox">7:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">8:00 PM
                     <span class="checkmark"></span>
                 </label>
             </div>
             <div class="field" id="Thursday" style="display: none;">
-                <label>Available times Thursday</label>
-                <label class="input_con">
-                    <input type="checkbox">9:00 AM
-                    <span class="checkmark"></span>
-                </label>
+                <label class="label">Available times Thursday</label>
                 <label class="input_con">
                     <input type="checkbox">10:00 AM
                     <span class="checkmark"></span>
@@ -289,19 +255,11 @@
                 </label>
                 <label class="input_con">
                     <input type="checkbox">7:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">8:00 PM
                     <span class="checkmark"></span>
                 </label>
             </div>
             <div class="field" id="Friday" style="display: none;">
-                <label>Available times Friday</label>
-                <label class="input_con">
-                    <input type="checkbox">9:00 AM
-                    <span class="checkmark"></span>
-                </label>
+                <label class="label">Available times Friday</label>
                 <label class="input_con">
                     <input type="checkbox">10:00 AM
                     <span class="checkmark"></span>
@@ -342,115 +300,11 @@
                     <input type="checkbox">7:00 PM
                     <span class="checkmark"></span>
                 </label>
-                <label class="input_con">
-                    <input type="checkbox">8:00 PM
-                    <span class="checkmark"></span>
-                </label>
             </div>
-            <div class="field" id="Saturday" style="display: none;">
-                <label>Available times Saturday</label>
-                <label class="input_con">
-                    <input type="checkbox">9:00 AM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">10:00 AM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">11:00 AM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">12:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">1:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">2:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">3:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">4:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">5:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">6:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">7:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">8:00 PM
-                    <span class="checkmark"></span>
-                </label>
+            <div class="divider">
             </div>
-            <div class="field" id="Sunday" style="display: none;">
-                <label>Available times Sunday</label>
-                <label class="input_con">
-                    <input type="checkbox">9:00 AM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">10:00 AM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">11:00 AM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">12:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">1:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">2:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">3:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">4:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">5:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">6:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">7:00 PM
-                    <span class="checkmark"></span>
-                </label>
-                <label class="input_con">
-                    <input type="checkbox">8:00 PM
-                    <span class="checkmark"></span>
-                </label>
-            </div>
+            <button class="therapy">Submit</button>
         </div>
-
     </main>
     <footer>
         <div>
@@ -530,30 +384,6 @@
                 Friday.style.display = "block";
             } else {
                 Friday.style.display = "none";
-            }
-        }
-        function chSat() {
-            // Get the checkbox
-            var saturday = document.getElementById("saturday");
-            // Get the output text
-            var Saturday = document.getElementById("Saturday");
-            // If the checkbox is checked, display the output text
-            if (saturday.checked == true){
-                Saturday.style.display = "block";
-            } else {
-                Saturday.style.display = "none";
-            }
-        }
-        function chSun() {
-            // Get the checkbox
-            var sunday = document.getElementById("sunday");
-            // Get the output text
-            var Sunday = document.getElementById("Sunday");
-            // If the checkbox is checked, display the output text
-            if (sunday.checked == true){
-                Sunday.style.display = "block";
-            } else {
-                Sunday.style.display = "none";
             }
         }
     </script>
