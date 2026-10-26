@@ -293,10 +293,11 @@ div#qoute {
     padding-top: 50px;
 }
 
-div#qoute > div.img {
+div#qoute > img {
     display: block;
     width: 90%;
     height: 500px;
+    filter: blur(3px);
 }
 
 div#qoute > div.background_qoute {
@@ -305,11 +306,11 @@ div#qoute > div.background_qoute {
     align-items: center;
     padding: 5vmin;    
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: var(--back-color);
+    color: white;
     width: 80%;
 }
 div#qoute > div.background_qoute > h2 {
@@ -565,6 +566,7 @@ main#form > div > div.field > input {
 }
 
 /* Hide the browser's default checkbox */
+
 .input_con input {
     position: absolute;
     opacity: 0;
@@ -574,6 +576,7 @@ main#form > div > div.field > input {
 }
 
 /* Create a custom checkbox */
+
 .checkmark {
     position: absolute;
     top: 0;
@@ -595,16 +598,19 @@ div#main_form2 .checkmark {
 }
 
 /* On mouse-over, add a grey background color */
+
 .input_con:hover input ~ .checkmark {
     background-color: var(--hover-pop-color);
 }
 
 /* When the checkbox is checked, add a blue background */
+
 .input_con input:checked ~ .checkmark {
     background-color: var(--pop-color);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
+
 .checkmark:after {
     content: "";
     position: absolute;
@@ -612,11 +618,13 @@ div#main_form2 .checkmark {
 }
 
 /* Show the checkmark when checked */
+
 .input_con input:checked ~ .checkmark:after {
     display: block;
 }
 
 /* Style the checkmark/indicator */
+
 .input_con .checkmark:after {
     left: 14px;
     top: 7px;
@@ -645,6 +653,8 @@ main#form > div > div > .label {
     text-decoration: underline;
 }
 
+/* Makes sure the checkmark on the week days */
+
 @media screen and (min-width: 480px) and (max-width: 1300px) {
     main#form > div > div > .label {
         margin-right: 5%;
@@ -658,7 +668,7 @@ main#form > div > div > .label {
         margin-left: 5%;
     }
 }
-
+/* makes sure the checkmarks dont overlap with the text */
 @media screen and (min-width: 480px) and (max-width: 1300px) {
     .checkmark{
         left: 25vmin;
@@ -678,6 +688,9 @@ main#form > div > div > .label {
     }
 }
 
+
+/* The @media for this is to fix the checkmark from shifting out of place */
+
 @media screen and (min-width: 480px) and (max-width: 800px) {
     .checkmark{
         left: 10vmin;
@@ -692,6 +705,7 @@ main#form > div > div > .label {
     }
 }
 
+/* Gives a tittle to the link tree */
 div#contact_tittle {
     background-color: var(--base-color);
     display: flex;
@@ -711,6 +725,8 @@ div#contact_tittle > h2 {
     padding-bottom: 10px;
 }
 
+/* An animation for the tittle of the link tree */
+
 div#contact_tittle > h2:hover{
     animation-name: contact;
     animation-duration: 1s;
@@ -729,6 +745,8 @@ div#contact_tittle > h2:hover{
     }
 }
 
+/* These are the link boxes for the link tree */
+
 #Contact {
     display: flex;
     justify-content: space-around;
@@ -744,12 +762,11 @@ div#contact_tittle > h2:hover{
 
 #Contact > button  {
     width: 40%;
-    height: 300px;
+    height: 250px;
     margin: 5%;
     border: 3px solid var(--active-pop-color); 
     border-radius: 10px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0,0,0,1), rgba(0,0,0,1));
-
 }
 
 #Contact > button > img {
@@ -760,21 +777,75 @@ div#contact_tittle > h2:hover{
     height: 100%;
 }
 
+#Contact > button > img:hover {
+    opacity: 50%;
+}
+
 #Contact > button > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: var(--back-color);
+    font-size: 17px;
     position: relative;
     bottom: 35px;
     left: 5px;
     padding-left: 10%;
     padding-right: 10%;
-
 }
 
 #Contact > button > div > div > img{
     width: 3vmin;
+}
+
+/* gallery section for the colaboration section */
+
+main > div#gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5%;
+    
+}
+
+main > div#gallery > a {
+    border: 3px solid rgb(248, 248, 248);
+    height: 100%;
+    background-color: var(--back-color);
+}
+
+main > div#gallery > a:hover {
+    border: 5px solid white;
+}
+
+main > div#gallery > a > div > img {
+    height: 100%;
+}
+
+main > div#gallery > a > div#warning {
+    position: absolute;
+    top: 180px;
+}
+
+main > div#gallery > a > div#warning > p {
+    color: red;
+    font-weight: bold;
+}
+
+main > div#gallery > a > div#info {
+    border-top: 3px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(248, 248, 248);
+}
+main > div#gallery > a > div#info > h2{
+    color: black;
+}
+main > div#gallery > a > div#info > p{
+    color: black;
 }
 
 /* Footer Section */
