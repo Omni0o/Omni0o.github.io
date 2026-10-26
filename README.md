@@ -17,7 +17,8 @@ Navigation Bar and Footer
   5. The footer contain the tittle that when hovered over will make the text translucent.
   6. The footer also holds the privacy, and terms of service pages.
   7. hovering over privacy and terms of service plays an animation that underlines the text.
-  ![image of navbar and footer]()
+  <img width="1535" height="908" alt="Screenshot 2026-10-25 121941" src="https://github.com/user-attachments/assets/321d8f00-45ce-4e95-bf1c-7bdd99072c8c" />
+
 
 The home page.
   1. It shows a summary of who she is and a photo of her. (In the moment their are no photos but black blocks will show where they would be)
@@ -25,12 +26,15 @@ The home page.
   3. It also shows a qoute that helps people understand her philosphy for therapy.
   4. the final section is a Carousel where their will be photos of events she has attended.
   5. The carousel has two buttons that let you scroll through the images.
-  ![home page]()
+  <img width="1535" height="906" alt="Screenshot 2026-10-25 122003" src="https://github.com/user-attachments/assets/cea1dd04-058d-4c1d-b58e-e213c1ed40a9" />
+  <img width="1533" height="910" alt="Screenshot 2026-10-25 122017" src="https://github.com/user-attachments/assets/c8357f30-d5a3-4dab-94a6-a67fc464aef4" />
+
 
 The about me page.
   1. contains a further qoute that further explain her purpose for giving therapy.
   2. the next section is a indepth about me section with two paragraphs and photos to acompany the text.
-  ![about me page]()
+  <img width="1535" height="908" alt="Screenshot 2026-10-25 121906" src="https://github.com/user-attachments/assets/f1e57cec-cb9c-49b5-a437-b0963fcbb06c" />
+
 
 The appointment page.
   1. It contains the form necessary for schedualing an appointment.
@@ -39,7 +43,10 @@ The appointment page.
   4. checking different days that are available will make new parts of the form to be revealed.
   5. Their is a calander section that is interactive.
   6. Their is a submit button at the very end that can be interacted to but has no functionality.
-  ![appointment page]()
+  <img width="1535" height="906" alt="Screenshot 2026-10-25 122032" src="https://github.com/user-attachments/assets/04c1be99-6080-488c-a944-d03f90a5e6e5" />
+  <img width="1535" height="907" alt="Screenshot 2026-10-25 122050" src="https://github.com/user-attachments/assets/17ea660d-8d48-49a1-a091-798326ae456f" />
+
+
 
 The colaboration page. (incomplete) **Will be worked on during week 1**
   1. contains events she has held
